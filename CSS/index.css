@@ -1,0 +1,136 @@
+a {
+  text-decoration-line: none;
+  color: #FFFFFF;
+}
+
+body {
+  font-family: "ChronicleDisplaySemibold";
+  color: #FFFFFF;
+  width: 1920px;
+  height: 4600px;
+}
+
+.background {
+  height: 4600px;
+  background-color: #0B1D26;
+  position: relative;
+  z-index: -1;
+}
+.background .background-part {
+  position: absolute;
+}
+.background .HG {
+  top: 0;
+}
+.background .MG {
+  top: 464px;
+}
+.background .VG {
+  top: 768px;
+}
+.background .BG-Content {
+  top: 1200px;
+}
+.background .BG-Hero {
+  top: 0;
+}
+
+.foreground {
+  position: absolute;
+  top: 0;
+}
+.foreground .header {
+  position: absolute;
+  left: 80px;
+  top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1760px;
+  height: 25px;
+}
+.foreground .header .logo {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.foreground .header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 22px;
+}
+.foreground .header .profile button {
+  color: #FFFFFF;
+  background-color: unset;
+  border: none;
+  font-family: "GliroyExtraBold";
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.foreground .social {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  top: 359px;
+  left: 80px;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 22px;
+}
+.foreground .social span {
+  writing-mode: vertical-lr;
+}
+.foreground .title {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  height: 310px;
+  top: 287px;
+  left: 500px;
+  gap: 32px;
+}
+.foreground .title > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  color: #FBD784;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+}
+.foreground .title > div:nth-child(2) {
+  font-family: "ChronicleDisplaySemibold";
+  font-size: 88px;
+  line-height: 100px;
+}
+.foreground .title > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: "GliroyExtraBold";
+  width: 126px;
+  height: 24px;
+}
+
+.rectangle {
+  display: inline-block;
+  background-color: #FBD784;
+  width: 72px;
+  height: 2px;
+}/*# sourceMappingURL=index.css.map */

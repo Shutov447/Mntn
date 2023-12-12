@@ -1,0 +1,31 @@
+@import '../SCSS/variables.scss';
+
+@font-face {
+  font-family: $GliroyExtraBold;
+  src: url(../FONTS/Gilroy/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: $GliroyLight;
+  src: url(../FONTS/Gilroy/Gilroy-Light.otf);
+}
+
+@font-face {
+  font-family: $ChronicleDisplayBlack;
+  src: url(../FONTS/chronicle-display-cdnfonts/Chronicle-Display-Black.otf);
+}
+
+@font-face {
+  font-family: $ChronicleDisplayLightItalic;
+  src: url(../FONTS/chronicle-display-cdnfonts/Chronicle-Display-Light-Italic.otf);
+}
+
+@font-face {
+  font-family: $ChronicleDisplayRoman;
+  src: url(../FONTS/chronicle-display-cdnfonts/Chronicle-Display-Roman.otf);
+}
+
+@font-face {
+  font-family: $ChronicleDisplaySemibold;
+  src: url(../FONTS/chronicle-display-cdnfonts/Chronicle-Display-Semibold.otf);
+}

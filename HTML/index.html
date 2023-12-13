@@ -9,47 +9,188 @@
     <link rel="stylesheet" href="../CSS/index.css" />
   </head>
   <body>
-    <div class="background">
-      <img src="../IMG/HG.png" alt="HG" class="background-part HG" />
-      <img src="../IMG/MG.png" alt="MG" class="background-part MG" />
-      <img src="../IMG/VG.png" alt="VG" class="background-part VG" />
-      <img
-        src="../IMG/BG_Content.png"
-        alt="BG_Content"
-        class="background-part BG-Content"
-      />
-      <img
-        src="../IMG/BG_Hero.png"
-        alt="BG_Hero"
-        class="background-part BG-Hero"
-      />
-    </div>
-    <div class="foreground">
-      <header class="header">
-        <div class="logo">MNTN</div>
-        <ul class="menu">
-          <li><a href="">Equipment</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-        <div class="profile">
-          <button>
-            <img src="../IMG/ICONS/profile.png" alt="profile" />Account
-          </button>
-        </div>
-      </header>
-      <div class="social">
-        <span>Follow us</span>
-        <div><a href=""><img src="../IMG/ICONS/instagram.png" alt="instagram" /></a></div>
-        <div><a href=""><img src="../IMG/ICONS/twitter.png" alt="twitter" /></a></div>
+    <div id="start">
+      <div class="background">
+        <img src="../IMG/HG.png" alt="HG" class="background-part HG" />
+        <img src="../IMG/MG.png" alt="MG" class="background-part MG" />
+        <img src="../IMG/VG.png" alt="VG" class="background-part VG" />
+        <img
+          src="../IMG/BG_Content.png"
+          alt="BG_Content"
+          class="background-part BG-Content"
+        />
+        <img
+          src="../IMG/BG_Hero.png"
+          alt="BG_Hero"
+          class="background-part BG-Hero"
+        />
       </div>
-      <div class="title">
-        <div>
-          <div class="rectangle"></div>A HIKING GUIDE
+      <div class="foreground">
+        <header class="header">
+          <div class="logo">MNTN</div>
+          <ul class="menu">
+            <li><a href="">Equipment</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+          <div class="profile">
+            <button>
+              <img src="../IMG/ICONS/profile.png" alt="profile" />Account
+            </button>
+          </div>
+        </header>
+        <div class="social">
+          <span>Follow us</span>
+          <div>
+            <a href=""
+              ><img src="../IMG/ICONS/instagram.png" alt="instagram"
+            /></a>
+          </div>
+          <div>
+            <a href=""><img src="../IMG/ICONS/twitter.png" alt="twitter" /></a>
+          </div>
         </div>
-        <div>Be Prepared For The Mountains And Beyond!</div>
-        <div>scroll down<img src="../IMG/ICONS/arrow.png" alt="arrow"></div>
+        <div class="title-card">
+          <div>
+            <div class="rectangle"></div>
+            A HIKING GUIDE
+          </div>
+          <div>Be Prepared For The Mountains And Beyond!</div>
+          <div>
+            <button>
+              scroll down<img
+                src="../IMG/ICONS/white_arrow_down.png"
+                alt="arrow"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar" id="progress-bar">
+            <ul class="steps" id="steps">
+              <li><a href="#start">Start</a></li>
+              <li><a href="#01">01</a></li>
+              <li><a href="#02">02</a></li>
+              <li><a href="#03">03</a></li>
+            </ul>
+            <div class="indicator" id="indicator"></div>
+            <div class="indicator-line" id="indicator-line"></div>
+          </div>
+        </div>
+        <div class="content-container">
+          <div class="card-container">
+            <div class="card" id="01">
+              <div class="text">
+                <div>
+                  <div class="rectangle"></div>
+                  GET STARTED
+                </div>
+                <div>What level of hiker are you?</div>
+                <div>
+                  Determining what level of hiker you are can be an important
+                  tool when planning future hikes. This hiking level guide will
+                  help you plan hikes according to different hike ratings set by
+                  various websites like All Trails and Modern Hiker. What type
+                  of hiker are you – novice, moderate, advanced moderate,
+                  expert, or expert backpacker?
+                </div>
+                <div>
+                  <a href="">
+                    read more<img
+                      src="../IMG/ICONS/accent_arrow_right.png"
+                      alt="arrow"
+                    />
+                  </a>
+                </div>
+                <div class="number">01</div>
+              </div>
+              <div><img src="../IMG/CARDS/01.png" alt="01" /></div>
+            </div>
+            <div class="card" id="02">
+              <div class="text">
+                <div>
+                  <div class="rectangle"></div>
+                  HIKING ESSENTIAL
+                </div>
+                <div>Picking the right Hiking Gear!</div>
+                <div>
+                  The nice thing about beginning hiking is that you don’t really
+                  need any special gear, you can probably get away with things
+                  you already have. Let’s start with clothing. A typical mistake
+                  hiking beginners make is wearing jeans and regular clothes,
+                  which will get heavy and chafe wif they get sweaty or wet.
+                </div>
+                <div>
+                  <a href="">
+                    read more<img
+                      src="../IMG/ICONS/accent_arrow_right.png"
+                      alt="arrow"
+                    />
+                  </a>
+                </div>
+                <div class="number">02</div>
+              </div>
+              <div><img src="../IMG/CARDS/02.png" alt="01" /></div>
+            </div>
+            <div class="card" id="03">
+              <div class="text">
+                <div>
+                  <div class="rectangle"></div>
+                  WHERE YOU GO IS THE KEY
+                </div>
+                <div>Understand Your Map & Timing!</div>
+                <div>
+                  To start, print out the hiking guide and map. If it’s raining,
+                  throw them in a Zip-Lock bag. Read over the guide, study the
+                  map, and have a good idea of what to expect. I like to know
+                  what my next landmark is as I hike. For example, I’ll read the
+                  guide and know that say, in a mile, I make a right turn at the
+                  junction.
+                </div>
+                <div>
+                  <a href="">
+                    read more<img
+                      src="../IMG/ICONS/accent_arrow_right.png"
+                      alt="arrow"
+                    />
+                  </a>
+                </div>
+                <div class="number">03</div>
+              </div>
+              <div><img src="../IMG/CARDS/03.png" alt="01" /></div>
+            </div>
+          </div>
+          <div class="footer-container">
+            <div>
+              <div class="logo">MNTN</div>
+              <div>
+                Get out there & discover your next slope, mountain &
+                destination!
+              </div>
+              <div>Copyright 2019 MNTN, Inc. Terms & Privacy</div>
+            </div>
+            <div>
+              More on The Blog
+              <ul>
+                <li><a href="">About MNTN</a></li>
+                <li><a href="">Contributors & Writers</a></li>
+                <li><a href="">Write For Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div>
+              More on MNTN
+              <ul>
+                <li><a href="">The Team</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Press</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="../JS/progress_bar.js"></script>
   </body>
 </html>

@@ -6,14 +6,43 @@ a {
 }
 
 body {
+  background-color: $BG;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: $ChronicleDisplaySemibold;
   color: $white;
+  min-width: 1920px;
+}
+
+body > div {
+  z-index: -1;
   width: 1920px;
-  height: 4600px;
+  background-color: $BG;
+}
+
+.rectangle {
+  display: inline-block;
+  background-color: $accent;
+  width: 72px;
+  height: 2px;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  padding: 0;
+}
+
+.logo {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .background {
-  height: 4600px;
   background-color: $BG;
   position: relative;
   z-index: -1;
@@ -56,14 +85,6 @@ body {
     align-items: center;
     width: 1760px;
     height: 25px;
-
-    .logo {
-      font-size: 32px;
-      line-height: 38px;
-      letter-spacing: 0.01em;
-      text-transform: capitalize;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
 
     .menu {
       display: flex;
@@ -108,7 +129,7 @@ body {
     }
   }
 
-  .title {
+  .title-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -117,40 +138,220 @@ body {
     top: 287px;
     left: 500px;
     gap: 32px;
+
+    div:first-child {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 32px;
+      color: $accent;
+      font-family: $GliroyExtraBold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 6px;
+    }
+
+    div:nth-child(2) {
+      font-family: $ChronicleDisplaySemibold;
+      font-size: 88px;
+      line-height: 100px;
+    }
+
+    div:last-child {
+      button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+        font-family: $GliroyExtraBold;
+        color: $white;
+        width: 126px;
+        height: 24px;
+      }
+    }
   }
 
-  .title > div:nth-child(1) {
+  .progress-bar-container {
+    position: absolute;
+    top: 326px;
+    left: 1763px;
+  }
+
+  .progress-bar {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     gap: 32px;
-    color: $accent;
-    font-family: $GliroyExtraBold;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 6px;
+    position: fixed;
+    height: 240px;
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      font-family: $GliroyExtraBold;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: right;
+    }
+
+    .indicator {
+      background-color: $white;
+      opacity: 0.5;
+      width: 3px;
+      height: 240px;
+    }
+
+    .indicator-line {
+      background-color: $white;
+      width: 3px;
+      height: 0;
+      z-index: 3;
+      position: relative;
+      right: 35px;
+    }
   }
 
-  .title > div:nth-child(2) {
-    font-family: $ChronicleDisplaySemibold;
-    font-size: 88px;
-    line-height: 100px;
-  }
-
-  .title > div:nth-child(3) {
+  .content-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    font-family: $GliroyExtraBold;
-    width: 126px;
-    height: 24px;    
-  }
-}
+    flex-direction: column;
+    gap: 200px;
+    width: 1462px;
+    position: absolute;
+    top: 1440px;
+    left: 229px;
 
-.rectangle {
-  display: inline-block;
-  background-color: $accent;
-  width: 72px;
-  height: 2px;
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 200px;
+
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 114px;
+        height: 720px;
+        position: relative;
+
+        .text {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          gap: 27px;
+          width: 632px;
+          padding-left: 150px;
+
+          div:first-child {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 32px;
+            color: $accent;
+            font-family: $GliroyExtraBold;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 6px;
+          }
+
+          div:nth-child(2) {
+            width: 555px;
+            font-family: $ChronicleDisplaySemibold;
+            font-size: 64px;
+            line-height: 77px;
+          }
+
+          div:nth-child(3) {
+            width: 632px;
+            font-family: $GliroyExtraBold;
+            font-size: 18px;
+            line-height: 32px;
+          }
+
+          div:nth-child(4) {
+            a {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 16px;
+              color: $accent;
+              font-family: $GliroyExtraBold;
+            }
+          }
+
+          .number {
+            position: absolute;
+            left: 0%;
+            right: 83.58%;
+            top: -100px;
+            bottom: 61.39%;
+            font-family: $GliroyExtraBold;
+            font-size: 240px;
+            line-height: 240px;
+            opacity: 0.1;
+            z-index: -1;
+            width: 240px;
+            height: 240px;
+          }
+        }
+      }
+
+      .card:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .footer-container {
+      display: flex;
+      width: 1462px;
+      margin-bottom: 120px;
+
+      div:first-child {
+        div:nth-child(2) {
+          font-family: $GliroyExtraBold;
+          width: 303px;
+          font-size: 18px;
+          line-height: 32px;
+          color: $white;
+          margin-left: 0;
+          margin: 24px 0 122px 0;
+        }
+
+        div:nth-child(3) {
+          font-family: $GliroyLight;
+          font-size: 18px;
+          line-height: 32px;
+          opacity: 0.5;
+          color: $white;
+          margin-left: 0;
+          width: 348px;
+        }
+      }
+
+      div:not(:first-child) {
+        color: $accent;
+        font-family: $GliroyExtraBold;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+      div:nth-child(2) {
+        margin-left: 547px;
+      }
+      div:nth-child(3) {
+        margin-left: 212px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+
+        li {
+          font-family: $GliroyLight;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
 }

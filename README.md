@@ -1,0 +1,1 @@
+source: https://www.figma.com/file/QbwdN388rbZeolob6d9kQO/MNTN---Landing-Page-(Community)?type=design&node-id=0%3A1&mode=design&t=Qlf550o7W2YMKIqd-1

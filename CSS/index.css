@@ -4,14 +4,43 @@ a {
 }
 
 body {
+  background-color: #0B1D26;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "ChronicleDisplaySemibold";
   color: #FFFFFF;
+  min-width: 1920px;
+}
+
+body > div {
+  z-index: -1;
   width: 1920px;
-  height: 4600px;
+  background-color: #0B1D26;
+}
+
+.rectangle {
+  display: inline-block;
+  background-color: #FBD784;
+  width: 72px;
+  height: 2px;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  padding: 0;
+}
+
+.logo {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.01em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .background {
-  height: 4600px;
   background-color: #0B1D26;
   position: relative;
   z-index: -1;
@@ -49,13 +78,6 @@ body {
   width: 1760px;
   height: 25px;
 }
-.foreground .header .logo {
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: 0.01em;
-  text-transform: capitalize;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 .foreground .header .menu {
   display: flex;
   justify-content: center;
@@ -92,7 +114,7 @@ body {
 .foreground .social span {
   writing-mode: vertical-lr;
 }
-.foreground .title {
+.foreground .title-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -102,7 +124,7 @@ body {
   left: 500px;
   gap: 32px;
 }
-.foreground .title > div:nth-child(1) {
+.foreground .title-card div:first-child {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -113,24 +135,176 @@ body {
   line-height: 22px;
   letter-spacing: 6px;
 }
-.foreground .title > div:nth-child(2) {
+.foreground .title-card div:nth-child(2) {
   font-family: "ChronicleDisplaySemibold";
   font-size: 88px;
   line-height: 100px;
 }
-.foreground .title > div:nth-child(3) {
+.foreground .title-card div:last-child button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 16px;
   font-family: "GliroyExtraBold";
+  color: #FFFFFF;
   width: 126px;
   height: 24px;
 }
-
-.rectangle {
-  display: inline-block;
-  background-color: #FBD784;
-  width: 72px;
-  height: 2px;
+.foreground .progress-bar-container {
+  position: absolute;
+  top: 326px;
+  left: 1763px;
+}
+.foreground .progress-bar {
+  display: flex;
+  gap: 32px;
+  position: fixed;
+  height: 240px;
+}
+.foreground .progress-bar .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+}
+.foreground .progress-bar .indicator {
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  width: 3px;
+  height: 240px;
+}
+.foreground .progress-bar .indicator-line {
+  background-color: #FFFFFF;
+  width: 3px;
+  height: 0;
+  z-index: 3;
+  position: relative;
+  right: 35px;
+}
+.foreground .content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  width: 1462px;
+  position: absolute;
+  top: 1440px;
+  left: 229px;
+}
+.foreground .content-container .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+.foreground .content-container .card-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 114px;
+  height: 720px;
+  position: relative;
+}
+.foreground .content-container .card-container .card .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 632px;
+  padding-left: 150px;
+}
+.foreground .content-container .card-container .card .text div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  color: #FBD784;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 6px;
+}
+.foreground .content-container .card-container .card .text div:nth-child(2) {
+  width: 555px;
+  font-family: "ChronicleDisplaySemibold";
+  font-size: 64px;
+  line-height: 77px;
+}
+.foreground .content-container .card-container .card .text div:nth-child(3) {
+  width: 632px;
+  font-family: "GliroyExtraBold";
+  font-size: 18px;
+  line-height: 32px;
+}
+.foreground .content-container .card-container .card .text div:nth-child(4) a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  color: #FBD784;
+  font-family: "GliroyExtraBold";
+}
+.foreground .content-container .card-container .card .text .number {
+  position: absolute;
+  left: 0%;
+  right: 83.58%;
+  top: -100px;
+  bottom: 61.39%;
+  font-family: "GliroyExtraBold";
+  font-size: 240px;
+  line-height: 240px;
+  opacity: 0.1;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+}
+.foreground .content-container .card-container .card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.foreground .content-container .footer-container {
+  display: flex;
+  width: 1462px;
+  margin-bottom: 120px;
+}
+.foreground .content-container .footer-container div:first-child div:nth-child(2) {
+  font-family: "GliroyExtraBold";
+  width: 303px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-left: 0;
+  margin: 24px 0 122px 0;
+}
+.foreground .content-container .footer-container div:first-child div:nth-child(3) {
+  font-family: "GliroyLight";
+  font-size: 18px;
+  line-height: 32px;
+  opacity: 0.5;
+  color: #FFFFFF;
+  margin-left: 0;
+  width: 348px;
+}
+.foreground .content-container .footer-container div:not(:first-child) {
+  color: #FBD784;
+  font-family: "GliroyExtraBold";
+  font-size: 24px;
+  line-height: 32px;
+}
+.foreground .content-container .footer-container div:nth-child(2) {
+  margin-left: 547px;
+}
+.foreground .content-container .footer-container div:nth-child(3) {
+  margin-left: 212px;
+}
+.foreground .content-container .footer-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.foreground .content-container .footer-container ul li {
+  font-family: "GliroyLight";
+  font-size: 18px;
+  line-height: 32px;
 }/*# sourceMappingURL=index.css.map */
